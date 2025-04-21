@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "Ebook reader",
+    "slug": "ebook-reader",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.meerule.ebookreader"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.meerule.ebookreader"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d4c9583d-bced-4e73-82bf-6dab51ea85fe"
+      }
+    },
+    "owner": "meerule",
+    "updates": {
+      "url": "https://u.expo.dev/d4c9583d-bced-4e73-82bf-6dab51ea85fe"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
