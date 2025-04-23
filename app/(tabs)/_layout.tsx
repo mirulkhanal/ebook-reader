@@ -14,13 +14,13 @@ export default function RootLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="books"
         options={{
-          title: "Home",
+          title: "BookShelf",
           tabBarIcon: ({ focused, color }) => {
             return (
               <Ionicons
-                name={focused ? "home-sharp" : "home-outline"}
+                name={focused ? "book-sharp" : "book-outline"}
                 color={color}
                 size={24}
               />

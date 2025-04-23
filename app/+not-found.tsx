@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Link, Stack } from "expo-router";
 
-const NotFoundComponent = (props: Props) => {
+const NotFoundComponent = () => {
   return (
     <>
       <Stack.Screen options={{ title: "Oops Not Found!!" }} />
