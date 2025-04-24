@@ -1,12 +1,13 @@
-import { Reader, ReaderProvider, Themes } from "@epubjs-react-native/core";
+import { Reader, ReaderProvider } from "@epubjs-react-native/core";
 import { useFileSystem } from "@epubjs-react-native/expo-file-system";
 import { useLocalSearchParams } from "expo-router";
 import { Dimensions, View, StyleSheet } from "react-native";
 
-export default function EpubReaderScreen({ uri }: { uri: string }) {
+export default function EpubReaderScreen() {
   const { width, height } = Dimensions.get("window");
 
   const { item } = useLocalSearchParams();
+
   console.log("ITEM SEND IN THE ROUTE PARAMS: ", item);
   return (
     <View style={styles.container}>
